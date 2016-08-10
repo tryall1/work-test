@@ -1,0 +1,2 @@
+[Wed Aug 10 09:34:10.664021 2016] [:error] [pid 5884] [client 127.0.0.1:37038] script '/home/tryall/www/work-test/index.php' not found or unable to stat
+[Wed Aug 10 10:12:08.123946 2016] [:error] [pid 7011] [client 127.0.0.1:37894] PHP Warning:  file_put_contents(.htaccess): failed to open stream: Permission denied in /home/tryall/www/work-test/web/index.php on line 17

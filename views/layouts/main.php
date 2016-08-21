@@ -20,6 +20,18 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+    <script>
+        var OneSignal = OneSignal || [];
+        OneSignal.push(["init", {
+            appId: "cedc900f-eee9-4702-89b4-868adb421890",
+            autoRegister: true, /* Set to true to automatically prompt visitors */
+            subdomainName: 'work-test',
+            notifyButton: {
+                enable: true /* Set to false to hide */
+            }
+        }]);
+    </script>
 </head>
 <body>
 <?php $this->beginBody() ?>

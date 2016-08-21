@@ -17,12 +17,7 @@ $this->title = 'News';
         'itemOptions' => ['class' => 'item'],
         'itemView' => function ($model, $key, $index, $widget) {
             echo Html::tag("h2", Html::encode($model->title));
-            // Проверяем на статус пользователя и выводим ссылки на полный текст новости
-            echo !Yii::$app->user->isGuest ? (
-            Html::tag("p", Html::encode($model->preview).Html::a(" читать далее...", ['news/view', 'id' => $model->id]))) :
-                (
-               Html::tag("p", Html::encode($model->preview))
-            );
+            echo Html::tag("p", Html::encode($model->preview).Html::a(" readmore...", ['news/view', 'id' => $model->id]));
         },
         'pager' => [
             'firstPageLabel' => 'first',

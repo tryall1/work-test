@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use yii\web\ForbiddenHttpException;
 
 class SiteController extends Controller
 {
